@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: AirAI
+title: AirIntelligence
 email: xiongkun04@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   聊一聊AI相关的理论科学，写一写可扩展的机器学习系统

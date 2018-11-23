@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-20T22:30:02-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">图灵机理论</title><link href="http://localhost:4000/science/2018/11/20/test.html" rel="alternate" type="text/html" title="图灵机理论" /><published>2018-11-20T22:28:22-05:00</published><updated>2018-11-20T22:28:22-05:00</updated><id>http://localhost:4000/science/2018/11/20/test</id><content type="html" xml:base="http://localhost:4000/science/2018/11/20/test.html">&lt;p&gt;图灵机&lt;/p&gt;</content><author><name></name></author><summary type="html">图灵机</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/11/20/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-11-20T22:20:22-05:00</published><updated>2018-11-20T22:20:22-05:00</updated><id>http://localhost:4000/jekyll/update/2018/11/20/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/11/20/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-23T17:04:04-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">AirIntelligence</title><subtitle>聊一聊AI相关的理论科学，写一写可扩展的机器学习系统</subtitle><entry><title type="html">图灵机和可计算性</title><link href="http://localhost:4000/science/2018/11/20/turing-machine.html" rel="alternate" type="text/html" title="图灵机和可计算性" /><published>2018-11-20T22:28:22-05:00</published><updated>2018-11-20T22:28:22-05:00</updated><id>http://localhost:4000/science/2018/11/20/turing-machine</id><content type="html" xml:base="http://localhost:4000/science/2018/11/20/turing-machine.html">&lt;p&gt;&lt;img src=&quot;/asserts/ai.png&quot; alt=&quot;AI&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;人工智能近年来的崛起，来自于神经网络对经典机器学习的突破，也带了很多商机。众多人工智能初创企业如雨后春笋，视觉，语音，语义，硬件和无人驾驶技术蓬勃发展，
+各大巨头也分设人工智能研究员，或者干脆转型成为“人工智能企业”。人工智能的从业者，创业者和投资人，都在试图找到一个问题的答案，机器到底能达到什么样的智能，
+未来的强人工智能或者终极人工智能是否会出现，会在哪里，何时出现。只有看清了未来，才能够找到指引技术和企业革新的正确道路。
+在我看来研究计算机科学的基础理论，也许是通向这个问题的正确道路。我们希望能够通过分析先辈留下的理论财富，能够逐步接近真相，进而更理性的判断人工智能的发展。&lt;/p&gt;
+
+&lt;p&gt;计算机科学的发展一直围绕着两个核心问题，一，如何优美的表达现实世界的问题，二，如何有效的用计算机程序解决他们。
+为了理解终极人工智能是否能达到，我们需要需要理解现代计算机的理论计算极限，也就是可计算性。首先我们需要了解图灵机-turing machine.&lt;/p&gt;
+
+&lt;h2 id=&quot;图灵机&quot;&gt;图灵机&lt;/h2&gt;
+&lt;p&gt;图灵机是一种理论计算机模型，在1936年阿兰图灵（Alan Turing）硕士阶段的论文（《论可计算数及其在判定问题中的应用》）中提出的, 被他成为自动机（automatic machine）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/asserts/turingmachine.jpg&quot; alt=&quot;From Wikipedia&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这种当时只存在于想象中的机器（上图）由一个控制器、一个读写头和一根无限长的纸带组成的，控制器控制读写头从纸带读取信息，也可写入信息到纸带，来完成运算。&lt;/p&gt;
+
+&lt;p&gt;算数的历史，可以追溯到人类早期文明的结绳计数，包括后来中国的珠算，莱布尼茨计算器，密码机，巴贝奇的差分机的发明，都属于创造计算机的尝试。直到图灵机的发明，才奠定了现代计算机的理论基础，他在数学上证明了物理机器计算的极限-可计算性。&lt;/p&gt;
+
+&lt;h2 id=&quot;可计算性和np&quot;&gt;可计算性和NP&lt;/h2&gt;
+
+&lt;h3 id=&quot;可计算性&quot;&gt;可计算性&lt;/h3&gt;
+&lt;p&gt;可计算性通俗的讲，就是给了我们评价数学问题是否可计算的标准，这个标准就是图灵机。从更现实的角度讲，只要是现代计算机能计算的，图灵机就一定能计算，图灵机算不出的，计算机也算不出。从图灵机发明到现在将近一个实际，仍然没有看到任何超越图灵机的理论模型出现，如概率图灵机，多道图灵机等众多理论模型都只是改进了效率，并未突破图灵机的理论范畴。&lt;/p&gt;
+
+&lt;p&gt;说清楚了计算机能算不能算的问题，我们再聊一聊算得快慢的问题，因为即使一个问题是可计算的，如果效率太低了，可能人有生之年也看不到计算的结果，没有任何意义。这就不得不介绍著名的NP问题，我有几位还在从事计算机理论研究的同学们，基本上都在和它作斗争。&lt;/p&gt;
+
+&lt;h3 id=&quot;复杂度&quot;&gt;复杂度&lt;/h3&gt;
+&lt;p&gt;在介绍NP问题之前，我简单介绍一下复杂度（Complexity）的概念，这里我们仅以时间复杂度距离，时间复杂度指的是程序运行所耗费的时间函数，一般变量用n，n代表同一个问题的不同规模，可以是几十，几千或是几百万。因为计算机想也解决的数量级非常大，也就是n非常大，常常忽略函数的常数部分，用大些的O来表示负责度，如：O(n)表示线性的复杂度。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;复杂度&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;n=10&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;n=100&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;n=10,000&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;类型&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(logn)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;对数&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(n)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10,000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;多项式&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;10000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1亿&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;多项式&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O(2&lt;sup&gt;n&lt;/sup&gt;)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1024&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.27 x 10&lt;sup&gt;30&lt;/sup&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1.995 x 10&lt;sup&gt;3010&lt;/sup&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;指数&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;上面中从上到下，复杂度依次递增，如果表中数值代表计算的次数的话，随着n的增长，不同复杂度的需要的计算次数有数量级的区别。实际上在计算机问题中，这个n一般都非常大，增长的非常快，例如，数据量和用户量。在计算机里，指数级别的复杂度是不可接受的，如表所示，2的一万次幂是一个超出我们理解的天文数字，为了更直观的理解它到底有多大，我举例两个例子帮助理解，比它小的多的2的256次方要写这么长一串：&lt;/p&gt;
+
+&lt;p&gt;2&lt;sup&gt;256&lt;/sup&gt; = 115,792,089,237,316,195,423,570,985,008,687,907,853,269,984,665,640,564,039,457,584,007,913,129,639,936&lt;/p&gt;
+
+&lt;p&gt;物理世界最大数字，应该是宇宙中粒子总合了，经天文学家估算，也不过1后面80个零到1后面81个零之间的一个数，2的一万次方则是1后面3010个零附近的数. 哪怕是2的100次方，一台每秒能运算百亿次的计算机，也不可能在百年之内得出结果。在实用计算机科学中，解决一个问题算法的复杂度，决定了它是否可以用在实际生产。&lt;/p&gt;
+
+&lt;h3 id=&quot;p和np&quot;&gt;P和NP&lt;/h3&gt;
+
+&lt;p&gt;在计算机科学领域，P和NP是两个著名抽象问题集合，作为一个非计算机工作者，如果能够和程序员谈论P和NP的问题，是一件非常时髦的事情。P称作多项式时间，NP则是非多项式时间，任意一个判别问题（即给定输入，判断是否的问题），如果能够在多项式时间复杂度得出结果，就属于P，不能在多项式时间内得到结果的则属于NP。NP的问题集合是包含P的，&lt;/p&gt;
+
+&lt;p&gt;可以看出P类问题是我们计算机容易解决，而NP类问题中除了P类问题，其他的都是很难在有限时间内得到解答的，我们往往都希望将实际问题转化为P类问题，利用计算机解决，而不愿遇到NP中比较难的问题（NP-Hard）。那么如何判断一个问题是P还是NP-Hard呢，一个简单的办法就是了解已知的NP-Hard问题，提前判断是否是无法解决的问题。感兴趣的同学还可以关注一下NP和P的等价性论断，NP-complete的概念等。复杂度的理论给我们一个效率判断体系，理解了P和NP的概念，有助于进一步理解计算机计算的极限，很多问题虽然是可以计算的，但是无法在短时间内得到结果。很有意思的一个复杂度的应用是非对称加密，正常加密过程和解密过程都是很快速的，然而没有钥匙的破解过程是NP-Hard, 现代区块链技术的发展也依赖于相似的应用，未来我会在别的章节里介绍。&lt;/p&gt;
+
+&lt;p&gt;人工智能的难题，有哪些是和NP-Complete等价的，或者属于NP-Hard，有待讨论。&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">机器问答系统</title><link href="http://localhost:4000/engineer/2018/11/20/question-answering.html" rel="alternate" type="text/html" title="机器问答系统" /><published>2018-11-20T22:20:22-05:00</published><updated>2018-11-20T22:20:22-05:00</updated><id>http://localhost:4000/engineer/2018/11/20/question-answering</id><content type="html" xml:base="http://localhost:4000/engineer/2018/11/20/question-answering.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
